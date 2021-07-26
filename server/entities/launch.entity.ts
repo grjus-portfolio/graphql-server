@@ -8,7 +8,7 @@ class Launch {
     @Field(of => Boolean)
     success:boolean
 
-    @Field(of => Boolean)
+    @Field(of => String)
     name:string
 
     @Field(of => String!)

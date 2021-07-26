@@ -4,7 +4,7 @@ import { Launch } from '../entities/launch.entity'
 
 @Resolver()
 class LaunchResolver {
-  @Query(()=>[Launch])
+  @Query(() => [Launch])
   async launches ():Promise<Launch> {
     const response = await spacexApi('/launches')
     return response.data
